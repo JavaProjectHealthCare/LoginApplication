@@ -1,0 +1,40 @@
+plugins {
+    // Apply the java-library plugin to add support for Java Library
+    id 'application'
+}
+
+dependencies {
+  // https://mvnrepository.com/artifact/org.springframework/spring-context-support
+compile group: 'org.springframework', name: 'spring-context-support', version: '5.1.6.RELEASE'
+  
+  // https://mvnrepository.com/artifact/org.springframework/spring-webmvc
+compile group: 'org.springframework', name: 'spring-webmvc', version: '5.1.6.RELEASE'
+  
+  // https://mvnrepository.com/artifact/org.springframework/spring-jdbc
+compile group: 'org.springframework', name: 'spring-jdbc', version: '5.1.6.RELEASE'
+  
+  // https://mvnrepository.com/artifact/javax.servlet/javax.servlet-api
+compile group: 'javax.servlet', name: 'javax.servlet-api', version: '4.0.1'
+  
+  // https://mvnrepository.com/artifact/org.projectlombok/lombok
+compile group: 'org.projectlombok', name: 'lombok', version: '1.18.6'
+
+// https://mvnrepository.com/artifact/javax.servlet/jstl
+compile group: 'javax.servlet', name: 'jstl', version: '1.2'
+
+// https://mvnrepository.com/artifact/log4j/log4j
+compile group: 'log4j', name: 'log4j', version: '1.2.17'
+
+// https://mvnrepository.com/artifact/taglibs/standard
+compile group: 'taglibs', name: 'standard', version: '1.1.2'
+
+compile files('C:\\oraclexe\\app\\oracle\\product\\11.2.0\\server\\jdbc\\lib\\ojdbc6.jar')
+  
+}
+
+// In this section you declare where to find the dependencies of your project
+repositories {
+    // Use jcenter for resolving your dependencies.
+    // You can declare any Maven/Ivy/file repository here.
+    jcenter()
+}

@@ -1,0 +1,11 @@
+SQL> create table LOGINLIST (userName varchar2(15),pwd varchar2(15));
+
+Table created.
+
+SQL> desc loginList;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ USERNAME                                           VARCHAR2(15)
+ PWD                                                VARCHAR2(15)
+
+SQL>
